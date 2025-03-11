@@ -6,6 +6,7 @@ type EnumSelectProps<T extends Record<string, string>> = {
   name?: string;
   className?: string;
   onChange?: (value: T[keyof T]) => void;
+  value: T[keyof T];
 };
 
 export function EnumSelect<T extends Record<string, string>>({
